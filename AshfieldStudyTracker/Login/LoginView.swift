@@ -18,6 +18,7 @@ struct LoginView: View {
                     Image("ASTLogoRedWhiteBg") // AST Logo Image
                         .resizable()
                         .frame(width: 125.0, height: 125.0)
+                        .shadow(radius: 10)
                     Text("Ashfield Study Tracker") //Additional Attributes, sets the font, font weight to bold and colour to white.
                         .font(/*@START_MENU_TOKEN@*/.title3/*@END_MENU_TOKEN@*/)
                         .fontWeight(.bold)
@@ -31,7 +32,7 @@ struct LoginView: View {
                 Rectangle()
                     .ignoresSafeArea()
                     .foregroundColor(Color.white)
-                    .frame(height: 250)
+                    .frame(height: (UIScreen.main.bounds.height) * 0.28)
                 VStack(spacing: 15) {
                     Button { // Sign in with QR code button
                         // to do
@@ -68,7 +69,11 @@ struct LoginView: View {
                 }
             }
             Text("Version v0.0.1, developed by Sam Valasek.")
+                .foregroundColor(Color.black)
                 .font(.footnote)
+                .frame(width: UIScreen.main.bounds.width)
+                .background(Color.white)
+                .ignoresSafeArea()
                 
         }
         .scaledToFill()

@@ -8,23 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		6BAEB23E29B61A2000A745C4 /* AshfieldStudyTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAEB23D29B61A2000A745C4 /* AshfieldStudyTrackerApp.swift */; };
-		6BAEB24029B61A2000A745C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAEB23F29B61A2000A745C4 /* ContentView.swift */; };
 		6BAEB24229B61A2200A745C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BAEB24129B61A2200A745C4 /* Assets.xcassets */; };
 		6BAEB24529B61A2200A745C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BAEB24429B61A2200A745C4 /* Preview Assets.xcassets */; };
 		6BAEB24E29B61A6500A745C4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAEB24D29B61A6500A745C4 /* LoginView.swift */; };
 		6BAEB25029B61AA500A745C4 /* TextCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAEB24F29B61AA500A745C4 /* TextCarousel.swift */; };
 		6BAEB25229B61AC100A745C4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAEB25129B61AC100A745C4 /* HomeView.swift */; };
+		6BAEB25529B7447F00A745C4 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAEB25429B7447F00A745C4 /* SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6BAEB23A29B61A2000A745C4 /* AshfieldStudyTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AshfieldStudyTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BAEB23D29B61A2000A745C4 /* AshfieldStudyTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AshfieldStudyTrackerApp.swift; sourceTree = "<group>"; };
-		6BAEB23F29B61A2000A745C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6BAEB24129B61A2200A745C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BAEB24429B61A2200A745C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6BAEB24D29B61A6500A745C4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		6BAEB24F29B61AA500A745C4 /* TextCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCarousel.swift; sourceTree = "<group>"; };
 		6BAEB25129B61AC100A745C4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		6BAEB25429B7447F00A745C4 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +57,10 @@
 		6BAEB23C29B61A2000A745C4 /* AshfieldStudyTracker */ = {
 			isa = PBXGroup;
 			children = (
+				6BAEB25329B7445D00A745C4 /* Util */,
 				6BAEB24C29B61A4C00A745C4 /* Home */,
 				6BAEB24B29B61A2C00A745C4 /* Login */,
 				6BAEB23D29B61A2000A745C4 /* AshfieldStudyTrackerApp.swift */,
-				6BAEB23F29B61A2000A745C4 /* ContentView.swift */,
 				6BAEB24129B61A2200A745C4 /* Assets.xcassets */,
 				6BAEB24329B61A2200A745C4 /* Preview Content */,
 			);
@@ -90,6 +90,14 @@
 				6BAEB25129B61AC100A745C4 /* HomeView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		6BAEB25329B7445D00A745C4 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				6BAEB25429B7447F00A745C4 /* SplashScreenView.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,9 +172,9 @@
 			files = (
 				6BAEB25029B61AA500A745C4 /* TextCarousel.swift in Sources */,
 				6BAEB24E29B61A6500A745C4 /* LoginView.swift in Sources */,
-				6BAEB24029B61A2000A745C4 /* ContentView.swift in Sources */,
 				6BAEB25229B61AC100A745C4 /* HomeView.swift in Sources */,
 				6BAEB23E29B61A2000A745C4 /* AshfieldStudyTrackerApp.swift in Sources */,
+				6BAEB25529B7447F00A745C4 /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +306,8 @@
 				DEVELOPMENT_TEAM = H4VWGKFLG5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AST;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -307,7 +317,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = me.samvalasek.AshfieldStudyTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -327,6 +337,8 @@
 				DEVELOPMENT_TEAM = H4VWGKFLG5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AST;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -336,7 +348,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = me.samvalasek.AshfieldStudyTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
