@@ -10,8 +10,6 @@ import SwiftUI
 struct SplashScreenView: View {
     
     @State private var isActive = false
-    @State private var frameSize = 0
-    @State private var opacity = 0.5
     
     var body: some View {
         if isActive {
@@ -19,6 +17,7 @@ struct SplashScreenView: View {
         } else {
             VStack {
                 VStack {
+                    Spacer()
                     Image("ASTLogoRedWhiteBg")
                         .resizable()
                         .frame(width: 125, height: 125)
@@ -26,7 +25,8 @@ struct SplashScreenView: View {
                     Text("Ashfield Study Tracker")
                         .font(.system(size:20))
                         .fontWeight(.bold)
-                    
+                    Spacer()
+                        .frame(height: 303)
                 }//vstack
                     .frame(height: UIScreen.main.bounds.height * 0.72)
                     .ignoresSafeArea()

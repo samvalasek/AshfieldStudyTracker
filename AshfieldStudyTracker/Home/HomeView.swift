@@ -12,7 +12,9 @@ struct HomeView: View {
         let username = "Sam";
         VStack {
             ZStack {
-                LinearGradient(gradient: Gradient(colors: [Color(.sRGB, red: 221/255, green: 55/255, blue: 49/255), .blue]), startPoint: .bottomLeading, endPoint: .topTrailing)
+                LinearGradient(gradient: Gradient(colors: [Color(.sRGB, red: 221/255, green: 55/255, blue: 49/255), .blue]),
+                               startPoint: .bottomLeading,
+                               endPoint: .topTrailing)
                     .ignoresSafeArea()
                     .frame(height: 120)
                 HStack {
@@ -27,28 +29,6 @@ struct HomeView: View {
                     
                 }.padding(40)
                     
-            }
-            Spacer()
-            ZStack(alignment: .center) {
-                VStack {
-                    Button {
-                        // t
-                    } label: {
-                        VStack {
-                            Image(systemName: "house")
-                                .imageScale(.large)
-                                .symbolRenderingMode(.monochrome)
-                                .frame(height: 26)
-                                .clipped()
-                            Text("Home")
-                        }
-                        .foregroundColor(Color("AshfieldRed"))
-                    }
-                    .background() {
-                        Rectangle()
-                            .background(Material.bar)                    }
-
-                }
             }
         }
     }
